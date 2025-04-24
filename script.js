@@ -57,14 +57,14 @@ function draw(){ // called every frame
 function drawClouds(){
     if (cloudX < 500){
         cloudX ++
-        // cloudX2 = + 2
+        cloudX2 = cloudX2 + 3
     }
     else{
         cloudX = 0
-        // cloudX2 = 0
+        cloudX2 = 0
     }
     image(cloud, cloudX, 20)
-    image(cloud, cloudX, 10)
+    image(cloud, cloudX2, 10)
 }
 
 
