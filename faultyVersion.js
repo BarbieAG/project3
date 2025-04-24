@@ -3,18 +3,14 @@ let pinkSheep // to store the specific sheep sprite
 let blackSheep // to store the specific sheep sprite
 // let textColor = random()
 let sheepNumber = 0
-let cloudX = 0
-let cloudX2 = 0
 
 let pink = 0;
 let black = 0;
-let correctAmount = document.querySelector("Amount")
+
 
 function preload(){
     pinkSheep = loadImage('./assets/PinkSheep1.png')
     blackSheep = loadImage('./assets/BlackSheep1Final.png')
-    moon = loadImage("./assets/Moon.png")
-    cloud= loadImage("./assets/Cloud.png")
 }
 
 function setup(){ //Setting up the scene, called once 
@@ -45,26 +41,10 @@ createCanvas(600, 500)
 
 function draw(){ // called every frame
     background("black")
-    image(moon,300,0)
-    drawClouds()
-    fill("plum")
+    fill("white")
     rect(0, 450, 600, 50)
     sheepDraw()
-    console.log(correctAmount)
     
-}
-
-function drawClouds(){
-    if (cloudX < 500){
-        cloudX ++
-        // cloudX2 = + 2
-    }
-    else{
-        cloudX = 0
-        // cloudX2 = 0
-    }
-    image(cloud, cloudX, 20)
-    image(cloud, cloudX, 10)
 }
 
 
@@ -106,13 +86,16 @@ function minus(){ //subtract from sheep counter
 function submit(){
     if (sheepNumber == pink){
         correct.hidden = false
-        correctAmount.textContent = pink
-        // restart.hidden = false
+        Amount.textContent = pink
+        restart.hidden = false
     }
     else{
         wrong.hidden = false
-        correctAmount.textContent = pink
+        Amount.textContent = pink
     }
 
 }
 
+// function drawText(){
+    
+// }

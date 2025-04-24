@@ -10,10 +10,17 @@
     
 </head>
 <body>
-    <h1>How many <span id="color"></span> sheeps are there?</span></h1>
-    <button id="plus" onclick="add()">+</button>
-    <h2><span id="counter">0</span></h2>
-    <button id="minus" onclick="minus()">-</button>
+    <h1>How many <span classs="color">pink</span> sheep are there?</span></h1>
+    <div id="numberCounter">
+        <button id="minus" onclick="minus()">-</button>
+        <h2><span id="counter">0</span></h2>
+        <button id="plus" onclick="add()">+</button>
+        <button id="submitBtn" onclick="submit()">Submit</button>
+    </div>
+    
+    <h1 hidden id="correct"><span id="correctColor">Correct! </span> there are <span class="Amount">0</span> <span class="color">pink</span> sheep\(≧∀≦)ゞ</h1>
+    <h1 hidden id="wrong"> <span id="wrongColor">Wrong!</span> there are <span class="Amount">0</span><span class="color">pink</span>  sheep (っ °Д °;)っ</h1>
+    <a hidden id="restart" href="./index.html">Retry</a>
 
 
     

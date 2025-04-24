@@ -1,18 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
+*{
+    font-family: "Pixelify Sans";
+}
 body{
     background-color: #432D82;
-    font-family: "Pixelify Sans";
 }
 
 button{
     background-color: pink;
     border-style: dashed;
+    font-size: 20px;
+    max-height: 30px;
 }
 
 #submitBtn{
     background-color: plum;
 }
 
+.color{
+    color: pink;
+}
+
+#correctColor{
+    color: green;
+}
+
+#wrongColor{
+    color: red;
+}
+
+a{
+    font-size: 50px;
+    background-color: plum;
+    border-style: dashed;
+
+}
+#numberCounter{
+    display: flex;
+    gap: 20px;
+   
+    
+}
 
 
