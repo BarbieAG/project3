@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body{
+    background-color: #432D82;
+    font-family: "Pixelify Sans";
+}
+
+button{
+    background-color: pink;
+    border-style: dashed;
+}
+
+#submitBtn{
+    background-color: plum;
+}
+
+
+
