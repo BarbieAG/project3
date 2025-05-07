@@ -2,6 +2,7 @@
 
 *{
     font-family: "Pixelify Sans";
+    align-items: center;
 }
 body{
     background-color: #432D82;
@@ -41,6 +42,11 @@ a{
     gap: 20px;
    
     
+}
+
+#text {
+    position: relative;
+    right: 0px;
 }
 
 

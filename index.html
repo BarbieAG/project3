@@ -6,11 +6,14 @@
     <title>Sheep Game</title>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     
 </head>
 <body>
-    <h1>How many <span classs="color">pink</span> sheep are there?</span></h1>
+    <h1 hidden id="question1">How many <span class="color">pink</span> sheep are there?</span></h1>
+    <h1 hidden id="question2">How many <span class="color">black</span> sheep are there?</span></h1>
+    <h1 hidden id="question3">How many sheep are there?</span></h1>
+    <h1 hidden id="question4">How many <span class="color">clouds</span> are there?</span></h1>
     <div id="numberCounter">
         <button id="minus" onclick="minus()">-</button>
         <h2><span id="counter">0</span></h2>
@@ -18,14 +21,20 @@
         <button id="submitBtn" onclick="submit()">Submit</button>
     </div>
     
-    <h1 hidden id="correct"><span id="correctColor">Correct!\(≧∀≦)ゞ</span></h1>
+    <!-- <h1 hidden id="correct"><span id="correctColor">Correct!\(≧∀≦)ゞ</span></h1>
     <h1 hidden id="wrong"> <span id="wrongColor">Wrong!(っ °Д °;)っ</span> </h1>
-    <a hidden id="restart" href="./index.html">Retry</a>
-<!-- 
-    <h1 hidden id="correct"><span id="correctColor">Correct! </span> there are <span class="Amount">0</span> <span class="color">pink</span> sheep\(≧∀≦)ゞ</h1>
-    <h1 hidden id="wrong"> <span id="wrongColor">Wrong!</span> there are <span class="Amount">0</span><span class="color">pink</span>  sheep (っ °Д °;)っ</h1>
     <a hidden id="restart" href="./index.html">Retry</a> -->
-
+    <div id="text">
+    <h1 hidden id="correct1"><span id="correctColor">Correct! </span> there are <span class="Amount">0</span> <span id="colorPink"> pink</span> sheep\(≧∀≦)ゞ</h1>
+    <h1 hidden id="correct2"><span id="correctColor">Correct! </span> there are <span class="Amount">0</span> <span id="colorBlack"> black</span> sheep\(≧∀≦)ゞ</h1>
+    <h1 hidden id="correct1"><span id="correctColor">Correct! </span> there are <span class="Amount">0</span> sheep\(≧∀≦)ゞ</h1>
+    <h1 hidden id="correct1"><span id="correctColor">Correct! </span> there are <span class="Amount">0</span> <span class="color"> clouds</span> \(≧∀≦)ゞ</h1>
+    <h1 hidden id="wrong1"> <span id="wrongColor">Wrong!</span> there are <span class="Amount">0</span><span class="colorPink"> pink</span>  sheep (っ °Д °;)っ</h1>
+    <h1 hidden id="wrong2"> <span id="wrongColor">Wrong!</span> there are <span class="Amount">0</span><span class="colorBlack"> black</span>  sheep (っ °Д °;)っ</h1>
+    <h1 hidden id="wrong3"> <span id="wrongColor">Wrong!</span> there are <span class="Amount">0</span><span class="color"> sheep</span> (っ °Д °;)っ</h1>
+    <h1 hidden id="wrong4"> <span id="wrongColor">Wrong!</span> there are <span class="Amount">0</span><span class="color"> clouds</span> (っ °Д °;)っ</h1>
+    <a hidden id="restart" href="./index.html">Retry</a>
+    </div>
 
     
 </body>
